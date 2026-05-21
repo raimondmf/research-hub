@@ -25,7 +25,7 @@ author: raimondmf
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: 'https://isegur.com'
+url: 'https://www.isegur.com'
 baseurl: ''
 
 # This is for the editing function in _/includes/improve_content
@@ -38,7 +38,7 @@ improve_content: https://github.com/raimondmf/research-hub/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://isegur.com/images/'
+urlimg: 'https://www.isegur.com/images/'
 
 
 # Logo size is 600x80 pixels

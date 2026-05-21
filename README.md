@@ -1,30 +1,16 @@
-## You like and use this theme? Then support me. Just [paypal.me/PhlowMedia](https://www.paypal.me/PhlowMedia) :)
+# 🛡️ InfoSec & Agentic Governance Research Hub
 
-## A Responsive Jekyll Theme: *Feeling Responsive*
+Welcome to my personal research repository. This space serves as a living laboratory and documentation hub for my work in Information Security, with a specific focus on **AI-Assisted Development Governance** **Agentic Safety** **AI API Security** and different initiatives to improve Security Maturity like **Cyber Hygiene** and **Tabletops**. 
 
-Do you want to get to know *Feeling Responsive*? Have a look › <http://phlow.github.io/feeling-responsive/>.
+The goal of this repository is to turn complex compliance frameworks into practical, actionable blueprints that engineering and business teams can use collaboratively.
 
-Documentation & Features › [documentation][1].
-License › https://github.com/Phlow/feeling-responsive/blob/gh-pages/LICENSE
+## 🚀 Key Frameworks & Documentation
 
-## Why use this theme?
+* **AI Agentic Governance Framework:** A comprehensive matrix mapping agentic tool security (e.g., Claude Code, Cursor, GitHub Copilot) against international standards (NIST AI RMF, ISO 42001, OWASP Agentic Security).
+* **Practical Guide for AI-Assisted Devs:** A department-agnostic blueprint designed to help professionals in HR, Marketing, Finance, and Engineering navigate "vibe coding" safely.
+* **InfoSec Blueprints:** Deep dives into data classification, pre-transmission DLP scanning, and modern shared responsibility models.
 
-Feeling Responsive is heavily customizable.
+## 📊 Regulatory & Industry Alignment
+All research and control matrices developed here are mapped against:
 
-1. Language-Support :)
-2. Optimized for speed and it's responsive.
-3. Built on Foundation Framework.
-4. Six different Headers.
-5. Customizable navigation, footer,...
-
-**[More ›][3]**
-
-
- [1]: http://phlow.github.io/feeling-responsive/documentation/
- [2]: https://github.com/Phlow/feeling-responsive/blob/gh-pages/LICENSE
- [3]: http://phlow.github.io/feeling-responsive/info/
- [4]: https://www.youtube.com/watch?v=rLS-BEvlEyY
- [5]: https://github.com/TWiStErRob
- [6]: https://phlow.github.io/feeling-responsive/changelog/
- [7]: http://phlow.github.io/feeling-responsive/
- [8]: http://phlow.github.io/simplicity/
+`NIST AI RMF` | `ISO/IEC 42001` | `Google SAIF` | `CSA AI Controls` | `MITRE ATLAS` | `OWASP LLM Top 10` | `OWASP AI Exchange` | `OWASP Agentic Security`

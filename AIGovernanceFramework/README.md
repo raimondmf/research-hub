@@ -442,7 +442,7 @@ Use this checklist to begin implementing the framework in your daily work:
 
 > **IMPORTANT NOTICE**
 >
-> This AI Agentic Governance Framework and accompanying documentation were created with the assistance of artificial intelligence (Claude, by Anthropic). While the content is based on established international frameworks (Google SAIF, CSA AI Controls Framework, MITRE ATLAS, NIST AI RMF 1.0, and ISO/IEC 42001:2023) and general best practices in AI security and data protection, it has the following limitations:
+> This AI Agentic Governance Framework and accompanying documentation were created with the assistance of artificial intelligence. While the content is based on established international frameworks (Google SAIF, CSA AI Controls Framework, MITRE ATLAS, NIST AI RMF 1.0, and ISO/IEC 42001:2023) and general best practices in AI security and data protection, it has the following limitations:
 >
 > 1. **Not legal advice.** This document does not constitute legal counsel. Organizations must consult qualified legal professionals for definitive compliance guidance specific to their jurisdiction and industry.
 >

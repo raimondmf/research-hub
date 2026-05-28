@@ -1,4 +1,4 @@
-# AI Risk Assessment Calculator — Instructions
+# AI Risk Assessment Calculator: Instructions
 
 **Version:** 3.1  
 **Based on:** AI Agentic Governance Framework v3.1 (2026-05-28)  

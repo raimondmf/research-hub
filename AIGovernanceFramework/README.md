@@ -37,7 +37,7 @@ Every time you interact with an AI coding tool, you are potentially:
 
 ## 2. What Is the Governance Framework Template?
 
-The **AI Agentic Governance Framework** (the [Agentics.md](https://github.com/raimondmf/research-hub/blob/6fb32b33f20184aece437fb0b3eabf82e807a84a/AIGovernanceFramework/Agentics.md) file) is a set of rules, controls, and guardrails designed to be included in the configuration of your AI coding tools. Think of it as a "rulebook" that tells your AI assistant:
+The **AI Agentic Governance Framework** (the [Agentics.md](https://github.com/raimondmf/research-hub/blob/6fb32b33f20184aece437fb0b3eabf82e807a84a/AIGovernanceFramework/Agentics.md) file, currently at **v3.1**) is a set of rules, controls, and guardrails designed to be included in the configuration of your AI coding tools. Think of it as a "rulebook" that tells your AI assistant:
 
 - What data it can and cannot access
 - What actions require your explicit approval
@@ -118,16 +118,24 @@ Step 5: ORGANIZE into a governance structure with clear accountability
 ```
 
 **Step 1 — Risk Identification**
-We identified six primary risk domains through analysis of known AI security incidents, academic research, and industry threat reports:
+We identified fourteen risk domains through analysis of known AI security incidents, academic research, and industry threat reports:
 1. Prompt injection and manipulation attacks
 2. Data leakage (code, secrets, personal data)
 3. Unauthorized code execution
 4. Supply chain compromise (malicious suggestions)
 5. Insufficient human oversight
 6. Regulatory non-compliance (GDPR focus)
+7. Agent identity and credential exposure
+8. Shadow AI and unsanctioned data flows
+9. Tool, plugin, and agent data exchange risks
+10. Multimodal capture and context window risks
+11. Endpoint and browser assistant overreach
+12. Session isolation and inference attacks
+13. Agent memory poisoning and agentic defensive operations
+14. AI-as-security-tool governance
 
 **Step 2 — Framework Alignment**
-Each risk was mapped against five internationally recognized AI security frameworks to ensure comprehensive coverage and alignment with industry best practices.
+Each risk was mapped against eleven internationally recognized AI security frameworks and standards to ensure comprehensive coverage and alignment with industry best practices.
 
 **Step 3 — Control Definition**
 For each risk, specific controls were defined with:
@@ -166,7 +174,7 @@ The framework was built on these principles:
 
 ## 5. The Frameworks Behind This Template
 
-The governance framework draws from five internationally recognized standards. Here is what each one contributes and why it matters:
+The governance framework draws from eleven internationally recognized standards and publications. Here is what each one contributes and why it matters:
 
 ### Quick Reference Links
 
@@ -180,6 +188,9 @@ The governance framework draws from five internationally recognized standards. H
 | OWASP Top 10 for LLM Applications (2025) | [https://genai.owasp.org/llm-top-10/](https://genai.owasp.org/llm-top-10/) |
 | OWASP AI Exchange | [https://owaspai.org](https://owaspai.org) |
 | OWASP Agentic Security Initiative | [https://genai.owasp.org/initiatives/agentic-security-initiative/](https://genai.owasp.org/initiatives/agentic-security-initiative/) |
+| OWASP GenAI Data Security (2026) | [https://genai.owasp.org](https://genai.owasp.org) |
+| Anthropic — Zero Trust for AI Agents | [https://claude.com/blog/zero-trust-for-ai-agents](https://claude.com/blog/zero-trust-for-ai-agents) |
+| Anthropic — Using LLMs to Secure Source Code | [https://claude.com/blog/using-llms-to-secure-source-code](https://claude.com/blog/using-llms-to-secure-source-code) |
 
 ### 5.1 Google SAIF (Secure AI Framework)
 
@@ -272,14 +283,17 @@ Official resource: [https://genai.owasp.org/initiatives/agentic-security-initiat
 ### How They Work Together
 
 ```
-NIST AI RMF          -->  Provides the PROCESS (Govern, Map, Measure, Manage)
-ISO 42001            -->  Provides the MANAGEMENT SYSTEM (certifiable controls)
-Google SAIF          -->  Provides the SECURITY ARCHITECTURE (6 elements)
-CSA AI Controls      -->  Provides the CONTROL CATALOG (10 families)
-MITRE ATLAS          -->  Provides the THREAT INTELLIGENCE (attack techniques)
-OWASP LLM Top 10    -->  Provides the VULNERABILITY CHECKLIST (prioritized risks)
-OWASP AI Exchange    -->  Provides the IMPLEMENTATION ENCYCLOPEDIA (detailed guidance)
-OWASP Agentic        -->  Provides the AGENTIC-SPECIFIC CONTROLS (autonomous AI risks)
+NIST AI RMF              -->  Provides the PROCESS (Govern, Map, Measure, Manage)
+ISO 42001                -->  Provides the MANAGEMENT SYSTEM (certifiable controls)
+Google SAIF              -->  Provides the SECURITY ARCHITECTURE (6 elements)
+CSA AI Controls          -->  Provides the CONTROL CATALOG (10 families)
+MITRE ATLAS              -->  Provides the THREAT INTELLIGENCE (attack techniques)
+OWASP LLM Top 10        -->  Provides the VULNERABILITY CHECKLIST (prioritized risks)
+OWASP AI Exchange        -->  Provides the IMPLEMENTATION ENCYCLOPEDIA (detailed guidance)
+OWASP Agentic            -->  Provides the AGENTIC-SPECIFIC CONTROLS (autonomous AI risks)
+OWASP GenAI Data Sec.    -->  Provides the DATA RISK TAXONOMY (21 GenAI-specific data risks)
+Anthropic Zero Trust     -->  Provides the AGENT ZERO-TRUST ARCHITECTURE (memory, identity, SOAR)
+Anthropic Code Security  -->  Provides the AI SCANNING GOVERNANCE (verification, patching)
 ```
 
 Together, they ensure the framework is:
@@ -291,6 +305,9 @@ Together, they ensure the framework is:
 - Vulnerability-specific (OWASP LLM Top 10)
 - Implementation-detailed (OWASP AI Exchange)
 - Agent-ready (OWASP Agentic)
+- Data-lifecycle-aware (OWASP GenAI Data Security)
+- Zero-trust-architected (Anthropic Zero Trust)
+- Defensively-automated (Anthropic Code Security)
 
 ---
 
@@ -305,14 +322,33 @@ The governance framework document [Agentics.md](https://github.com/raimondmf/res
 | **1. Executive Summary** | High-level overview and principles | Everyone |
 | **2. Scope & Applicability** | What tools and activities are covered | Everyone |
 | **3. Data Classification Rules** | What data can go where | Everyone |
-| **4. Framework Reference** | Summary of the 5 aligned frameworks | Governance, Compliance, Security teams |
-| **5. Master Control Matrix** | Detailed controls mapped to frameworks | Security, Compliance, Technical leads |
-| **6. Technical Implementation** | How to configure specific tools | Technical teams, DevOps |
+| **4. Framework Reference** | Summary of the 11 aligned frameworks | Governance, Compliance, Security teams |
+| **5. Master Control Matrix** | 107 controls across 14 risk domains mapped to frameworks | Security, Compliance, Technical leads |
+| **6. Technical Implementation** | 8 control layers with tool-specific configuration | Technical teams, DevOps |
 | **7. GDPR-Specific Controls** | Privacy law compliance details | DPO, Legal, Compliance |
-| **8. RACI Matrix** | Who is responsible for what | All team leads, Management |
-| **9. Implementation Roadmap** | When to implement each control | Project managers, CISO, CTO |
-| **10. Monitoring & Metrics** | How to measure effectiveness | Security, Compliance, Management |
-| **11. Operational Guardrails** | Rules embedded directly in AI tools | All AI-assisted developers |
+| **8. Shared Responsibility & RACI** | Who is responsible for what (external + internal) | All team leads, Management |
+| **9. Implementation Roadmap** | 3-phase, 52-week phased rollout | Project managers, CISO, CTO |
+| **10. Monitoring & Metrics** | 22 KRIs and compliance reporting schedule | Security, Compliance, Management |
+| **11. Operational Guardrails** | 11 guardrail categories embedded in AI tools | All AI-assisted developers |
+
+### AI Risk Assessment Calculator
+
+In addition to the framework document, the **AI Risk Assessment Calculator** ([AI_Risk_Assessment_Calculator_v3.1.xlsx](AI_Risk_Assessment_Calculator_v3.1.xlsx)) is an Excel workbook that helps you determine whether AI can be safely implemented for a specific system or application. It calculates risk based on:
+
+- Information classification (confidentiality, integrity, availability)
+- Personal data processing (none, regular, sensitive under GDPR Art. 9)
+- Exposure (intranet, B2B, internet-facing)
+- Business criticality and UNECE R155/R156 (carIT) relevance
+- System maturity (forefront, current, legacy, end-of-life)
+- AI integration depth (isolated, workflow, autonomous, multi-agent)
+- Implemented governance controls (107 controls, weighted by priority)
+
+The calculator produces:
+- **Inherent Risk Score** (before controls) on a 1–25 scale
+- **Residual Risk Score** (after controls) based on control effectiveness
+- **Automated recommendations** for required control tiers, GDPR obligations, UNECE requirements, and approval authority
+
+See the [Calculator Instructions](AI_Risk_Assessment_Calculator_Instructions.md) for full usage guidance.
 
 ### What You Need to Focus On
 
@@ -418,6 +454,13 @@ A: No. The framework requires periodic review (quarterly recommended) as AI capa
 | **Human-in-the-Loop** | Requiring a human to review and approve AI actions before they take effect |
 | **Zero Trust** | A security model that assumes no system or user is trusted by default, requiring continuous verification |
 | **SCCs (Standard Contractual Clauses)** | EU-approved legal agreements that enable international data transfers while maintaining GDPR protection |
+| **Inherent Risk** | The level of risk before any controls or mitigations are applied (Impact x Likelihood) |
+| **Residual Risk** | The level of risk remaining after controls are implemented (Inherent Risk x (1 - Control Effectiveness)) |
+| **Shadow AI** | Use of unapproved AI tools by employees outside formal governance, creating uncontrolled data flows |
+| **Agentic SOAR** | AI-speed Security Orchestration, Automation, and Response — defensive operations fast enough to counter AI-accelerated attacks |
+| **NHI (Non-Human Identity)** | Service accounts, API keys, OAuth tokens, and credentials used by AI agents rather than human users |
+| **UNECE R155/R156** | United Nations regulations for automotive cybersecurity (R155) and software updates (R156) applicable to vehicle systems |
+| **Memory Poisoning** | An attack where malicious content is injected into an AI agent's persistent memory to influence future behavior |
 
 ---
 
@@ -427,6 +470,7 @@ Use this checklist to begin implementing the framework in your daily work:
 
 - [ ] **Identify** which AI coding tools you currently use
 - [ ] **Classify** the data you typically work with (Public/Internal/Confidential/Restricted)
+- [ ] **Assess risk** using the [AI Risk Assessment Calculator](AI_Risk_Assessment_Calculator_v3.1.xlsx) for each system where AI will be implemented
 - [ ] **Request** the appropriate AI tool configuration from your IT/Security team
 - [ ] **Include** the governance guardrails in your AI tool's configuration file
 - [ ] **Complete** the AI literacy training when available
@@ -442,7 +486,7 @@ Use this checklist to begin implementing the framework in your daily work:
 
 > **IMPORTANT NOTICE**
 >
-> This AI Agentic Governance Framework and accompanying documentation were created with the assistance of artificial intelligence. While the content is based on established international frameworks (Google SAIF, CSA AI Controls Framework, MITRE ATLAS, NIST AI RMF 1.0, and ISO/IEC 42001:2023) and general best practices in AI security and data protection, it has the following limitations:
+> This AI Agentic Governance Framework and accompanying documentation were created with the assistance of artificial intelligence. While the content is based on established international frameworks (Google SAIF, CSA AI Controls Framework, MITRE ATLAS, NIST AI RMF 1.0, ISO/IEC 42001:2023, OWASP Top 10 for LLM, OWASP AI Exchange, OWASP Agentic Security, OWASP GenAI Data Security 2026, and Anthropic security publications) and general best practices in AI security and data protection, it has the following limitations:
 >
 > 1. **Not legal advice.** This document does not constitute legal counsel. Organizations must consult qualified legal professionals for definitive compliance guidance specific to their jurisdiction and industry.
 >
@@ -452,7 +496,7 @@ Use this checklist to begin implementing the framework in your daily work:
 >
 > 4. **AI-generated content limitations.** While based on publicly available framework documentation and established security principles, AI-generated content may contain inaccuracies, may not reflect the latest regulatory changes, and should be verified against authoritative sources.
 >
-> 5. **Framework versions.** The referenced frameworks evolve over time. Users should verify alignment with the most current versions of Google SAIF, CSA AI Controls, MITRE ATLAS, NIST AI RMF, and ISO/IEC 42001 at the time of implementation.
+> 5. **Framework versions.** The referenced frameworks evolve over time. Users should verify alignment with the most current versions of all referenced standards at the time of implementation.
 >
 > 6. **No liability.** The authors and the AI system used in creation accept no liability for any damages, losses, or regulatory penalties arising from the use or misuse of this document.
 >
@@ -461,7 +505,7 @@ Use this checklist to begin implementing the framework in your daily work:
 > ---
 > *Document generated with AI assistance — May 2026*
 > *Framework alignment verified against publicly available documentation as of creation date*
-> *Version 1.0 — Subject to organizational review and approval before implementation*
+> *Version 3.1 — Subject to organizational review and approval before implementation*
 
 ---
 

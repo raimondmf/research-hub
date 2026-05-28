@@ -470,7 +470,7 @@ Use this checklist to begin implementing the framework in your daily work:
 
 - [ ] **Identify** which AI coding tools you currently use
 - [ ] **Classify** the data you typically work with (Public/Internal/Confidential/Restricted)
-- [ ] **Assess risk** using the [AI Risk Assessment Calculator](https://github.com/raimondmf/research-hub/blob/ae900234df716bd313528ba228883f38ce73fc41/AIGovernanceFramework/AI_Risk_Assessment_Calculator.md) for each system where AI will be implemented
+- [ ] **Assess risk** using the [AI Risk Assessment Calculator](https://github.com/raimondmf/research-hub/blob/364a2880121d36a4976f2359a07bcdc56fbceef3/AIGovernanceFramework/AI_Risk_Assessment_Calculator.md) for each system where AI will be implemented
 - [ ] **Request** the appropriate AI tool configuration from your IT/Security team
 - [ ] **Include** the governance guardrails in your AI tool's configuration file
 - [ ] **Complete** the AI literacy training when available

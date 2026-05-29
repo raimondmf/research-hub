@@ -348,7 +348,7 @@ The calculator produces:
 - **Residual Risk Score** (after controls) based on control effectiveness
 - **Automated recommendations** for required control tiers, GDPR obligations, UNECE requirements, and approval authority
 
-See the [Calculator Instructions](https://github.com/raimondmf/research-hub/blob/2332d21d0b72e686afd40360ac7412e58a5049cb/AIGovernanceFramework/AI_Risk_Assessment_Calculator.md) for full usage guidance.
+See the [Calculator Instructions](https://github.com/raimondmf/research-hub/blob/4b59ebd6f067ba220e8ff911b1948b19319868f4/AIGovernanceFramework/AI_Risk_Assessment_Calculator.md) for full usage guidance.
 
 ### What You Need to Focus On
 

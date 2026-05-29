@@ -333,7 +333,7 @@ The governance framework document [Agentics.md](https://github.com/raimondmf/res
 
 ### AI Risk Assessment Calculator
 
-In addition to the framework document, the [**AI Risk Assessment Calculator**] (https://github.com/raimondmf/research-hub/blob/4b59ebd6f067ba220e8ff911b1948b19319868f4/AIGovernanceFramework/AI_Risk_Assessment_Calculator.md) is an Excel workbook that helps you determine whether AI can be safely implemented for a specific system or application. It calculates risk based on:
+In addition to the framework document, the [**AI Risk Assessment Calculator**](https://github.com/raimondmf/research-hub/blob/4b59ebd6f067ba220e8ff911b1948b19319868f4/AIGovernanceFramework/AI_Risk_Assessment_Calculator.md) is an Excel workbook that helps you determine whether AI can be safely implemented for a specific system or application. It calculates risk based on:
 
 - Information classification (confidentiality, integrity, availability)
 - Personal data processing (none, regular, sensitive under GDPR Art. 9)

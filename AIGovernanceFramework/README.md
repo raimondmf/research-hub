@@ -37,7 +37,7 @@ Every time you interact with an AI coding tool, you are potentially:
 
 ## 2. What Is the Governance Framework Template?
 
-The **AI Agentic Governance Framework** (the [Agentics.md](https://github.com/raimondmf/research-hub/blob/6fb32b33f20184aece437fb0b3eabf82e807a84a/AIGovernanceFramework/Agentics.md) file, currently at **v3.1**) is a set of rules, controls, and guardrails designed to be included in the configuration of your AI coding tools. Think of it as a "rulebook" that tells your AI assistant:
+The **AI Agentic Governance Framework** (the [Agentics.md](https://github.com/raimondmf/research-hub/blob/8c3babf752fd96db2d4900b64de382f1dd2040fe/AIGovernanceFramework/Agentics.md) file, currently at **v3.1**) is a set of rules, controls, and guardrails designed to be included in the configuration of your AI coding tools. Think of it as a "rulebook" that tells your AI assistant:
 
 - What data it can and cannot access
 - What actions require your explicit approval
@@ -313,7 +313,7 @@ Together, they ensure the framework is:
 
 ## 6. Structure of the Framework
 
-The governance framework document [Agentics.md](https://github.com/raimondmf/research-hub/blob/6fb32b33f20184aece437fb0b3eabf82e807a84a/AIGovernanceFramework/Agentics.md) is organized into these sections:
+The governance framework document [Agentics.md](https://github.com/raimondmf/research-hub/blob/8c3babf752fd96db2d4900b64de382f1dd2040fe/AIGovernanceFramework/Agentics.md) is organized into these sections:
 
 ### Overview Map
 
@@ -470,7 +470,7 @@ Use this checklist to begin implementing the framework in your daily work:
 
 - [ ] **Identify** which AI coding tools you currently use
 - [ ] **Classify** the data you typically work with (Public/Internal/Confidential/Restricted)
-- [ ] **Assess risk** using the [AI Risk Assessment Calculator](https://github.com/raimondmf/research-hub/blob/364a2880121d36a4976f2359a07bcdc56fbceef3/AIGovernanceFramework/AI_Risk_Assessment_Calculator.md) for each system where AI will be implemented
+- [ ] **Assess risk** using the [AI Risk Assessment Calculator](https://github.com/raimondmf/research-hub/blob/4b59ebd6f067ba220e8ff911b1948b19319868f4/AIGovernanceFramework/AI_Risk_Assessment_Calculator.md) for each system where AI will be implemented
 - [ ] **Request** the appropriate AI tool configuration from your IT/Security team
 - [ ] **Include** the governance guardrails in your AI tool's configuration file
 - [ ] **Complete** the AI literacy training when available
